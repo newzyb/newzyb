@@ -1,0 +1,17 @@
+Python编程-从入门到实践
+P155练习9.8：权限
+eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
+eric.describe_user()
+eric.privileges.show_privileges()
+
+print("\nAdding privileges...")
+eric_privileges = [
+    'can reset passwords',
+    'can moderate discussions',
+    'can suspend accounts',
+    ]
+
+eric.privileges.privileges = eric_privileges
+eric.privileges.show_privileges()
+
+编辑到这一段代码的时候，开始有点难度了，理解起来比较困难。
